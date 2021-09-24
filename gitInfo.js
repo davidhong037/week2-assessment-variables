@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+const gitDefinition = "A command line tool that can help track and record any changes to any files"
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+const gitHubDefinition = "A web-based interface that uses Git and allows several people to make changes to a project"
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -32,7 +32,10 @@
     Create an object called 'init' with 'description' and 'code' properties 
     following the guidelines above to describe the init command.
 */
-
+const init = {
+    description: 'initializes a local repository'
+    code: 'git init'
+}
 //CODE HERE
 
 //////////////////PROBLEM 4////////////////////
@@ -42,6 +45,10 @@
 */
 
 //CODE HERE
+const clone = {
+    description: 'copy a repo from Github and put on your machine'
+    code: 'git clone REPO URL'
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,7 +57,10 @@
 */
 
 //CODE HERE
-
+const status = {
+    description: 'displays information about a specific repo'
+    code: 'git status'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +68,10 @@
 */
 
 //CODE HERE
-
+const add = {
+    description: 'adds any files or updates to be tracked'
+    code: 'git add'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +79,10 @@
 */
 
 //CODE HERE
-
+const commit = {
+    description: 'creates a snapshot of current files being tracked'
+    code: "git commit -m 'description'"
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +91,7 @@
 */
 
 //CODE HERE
+const push = {
+    description: 'saving the local commits on Github'
+    code: 'git push REPO NAME'
+}
