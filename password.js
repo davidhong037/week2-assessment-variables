@@ -1,8 +1,13 @@
-function greaterThanTen (password){
-    const passsword = {
-        password: String(password)
-    }
+function greeting(name){
+    name: String(name)
+    console.log (`Welcome ${name} to the password validator tool!`)
+}
 
+function greaterThanTen (password){
+    const info = {
+    password: String(password)
+    }
+    
     if (password.length >= 10){
         return 'Success!'
     } else {
@@ -10,4 +15,6 @@ function greaterThanTen (password){
     }
 }
 
-console.log (greaterThanTen('hello12345'))
+greeting('David')
+greaterThanTen('hello12345')
+// console.log (greaterThanTen())

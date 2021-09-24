@@ -71,6 +71,8 @@ function carFactory(make, model, year){
   }else {
     car.isNew = false
   }
-  return car.isNew
+  return car
 }
-console.log ('toyota', 'camry', 2020)
+
+carFactory('toyota', 'camry', 2020)
+console.log (carFactory())
