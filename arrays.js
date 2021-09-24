@@ -49,5 +49,5 @@ function bigOrSmall (arr) {
       answers.push('small')
     }
   }
-  return answers
+  console.log (answers)
 }
