@@ -22,16 +22,16 @@ const lovesCode = true
 
 //CODE HERE
 if (faveNum === 13) {
-  console.log('lucky 13!') {
+  console.log('lucky 13!')
   } else {
     console.log ('not lucky 13')
   }
-}
+  
 //////////////////PROBLEM 5////////////////////
 /*
   Write a for loop that prints out your faveNum 5 times.
 */
-for (let i = 0; i < arr.length; i++){
-  co
+for (let i = 0; i < 5; i++) {
+  console.log (faveNum)
 }
 //CODE HERE

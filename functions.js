@@ -6,7 +6,12 @@
 */
 
 //CODE HERE
+function sum (num1, num2) {
+  return num1 + num2
+}
 
+let total = sum (1, 5)
+console.log (total)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,6 +22,15 @@
 */
 
 //CODE HERE
+function greaterThanFive (number) {
+  if (number > 5) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log (greaterThanFive(2))
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +41,18 @@
 */
 
 //CODE HERE
+function findZWords (word){
+  // word = String(word)
+
+  if (word.startsWith('z')) {
+    return "the name begins with Z"
+  } else {
+    return "the name does not begin with Z"
+  }
+}
+
+console.log (findZWords('Apple'))
+
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -36,3 +62,11 @@
 */
 
 //CODE HERE
+function iLove (name, love){
+  name = String(name)
+  love = String(love)
+  let str = `${name} loves ${love}`
+  return str
+}
+
+console.log (iLove('David', 'music'))
