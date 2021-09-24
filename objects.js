@@ -15,8 +15,18 @@
 */
 
 //CODE HERE
+const me = {
+  firstName: 'David',
+  state: 'New York',
+  age: 36,
+}
 
+function greeter (me){
+  const {firstName, state} = me
+  return 'Hello! My name is ' + firstName + ' and I live in ' + state
+}
 
+console.log (greeter(me))
 
 
 
@@ -45,3 +55,22 @@
 */
 
 //CODE HERE
+function carFactory(make, model, year){
+  // make = String(make)
+  // model = String(model)
+  // year = Number(year)
+
+  const car = {
+    make: String(make),
+    model: String(model),
+    year: Number(year)
+  }
+
+  if (car.year > 2018){
+    car.isNew = true
+  }else {
+    car.isNew = false
+  }
+  return car.isNew
+}
+console.log ('toyota', 'camry', 2020)
