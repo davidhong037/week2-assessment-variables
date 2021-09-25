@@ -56,14 +56,11 @@ console.log (greeter(me))
 
 //CODE HERE
 function carFactory(make, model, year){
-  // make = String(make)
-  // model = String(model)
-  // year = Number(year)
 
   const car = {
-    make: String(make),
-    model: String(model),
-    year: Number(year)
+    make: make,
+    model: model,
+    year: year
   }
 
   if (car.year > 2018){
@@ -71,8 +68,8 @@ function carFactory(make, model, year){
   }else {
     car.isNew = false
   }
+  console.log (car)
   return car
 }
 
 carFactory('toyota', 'camry', 2020)
-console.log (carFactory())

@@ -1,20 +1,22 @@
-function greeting(name){
-    name: String(name)
-    console.log (`Welcome ${name} to the password validator tool!`)
-}
+console.log ('Welcome to the password validator tool!')
 
-function greaterThanTen (password){
-    const info = {
-    password: String(password)
-    }
-    
+const readline = require('readline')
+const reader = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+reader.question('What password would you like to enter?', function(password){
+    String(password)
     if (password.length >= 10){
-        return 'Success!'
+        console.log ('It was a success!')
+        reader.close()
     } else {
-        return 'Failure!'
+        console.log ('You have failed!')
+        reader.close()
     }
-}
+})
 
-greeting('David')
-greaterThanTen('hello12345')
-// console.log (greaterThanTen())
+
+
+
